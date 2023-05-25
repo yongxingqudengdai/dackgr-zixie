@@ -39,6 +39,7 @@ torch.cuda.manual_seed_all(args.seed)
 def process_data():
     data_dir = args.data_dir
     raw_kb_path = os.path.join(data_dir, 'raw.kb')
+    print(raw_kb_path)
     train_path = data_utils.get_train_path(args)
     dev_path = os.path.join(data_dir, 'dev.triples')
     test_path = os.path.join(data_dir, 'test.triples')
